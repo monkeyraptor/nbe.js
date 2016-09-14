@@ -31,7 +31,7 @@ function nbe(d, a, f, t) {
                 if (check(d)) {
                     i = d;
                 }
-                if (a - i <= limit) {
+                if (a - i + 2 <= limit) {
                     while (i <= a) {
                         r += "x = " + app(i) + ", result = " + gen(i) + "\n";
                         i += 1;
@@ -49,7 +49,7 @@ function nbe(d, a, f, t) {
                 if (check(d)) {
                     i = d;
                 }
-                if (a - i <= limit) {
+                if (a - i + 2 <= limit) {
                     while (i <= a) {
                         r[i] = gen(i);
                         i += 1;
