@@ -1,4 +1,4 @@
-function nbe(a, f, t, d) {
+function nbe(d, a, f, t) {
     "use strict";
     var r = "";
     var i;
@@ -27,11 +27,11 @@ function nbe(a, f, t, d) {
         if (t !== 1) {
             r = "The function to generate the value is: f(x) = 1 + (1/x))ˣ\n---\n";
             if (f !== 1) {
-                if (a <= limit) {
-                    i = 1;
-                    if (check(d)) {
-                        i = d;
-                    }
+                i = 1;
+                if (check(d)) {
+                    i = d;
+                }
+                if (a - i <= limit) {
                     while (i <= a) {
                         r += "x = " + app(i) + ", result = " + gen(i) + "\n";
                         i += 1;
@@ -45,11 +45,11 @@ function nbe(a, f, t, d) {
         } else {
             r = {};
             if (f !== 1) {
-                if (a <= limit) {
-                    i = 1;
-                    if (check(d)) {
-                        i = d;
-                    }
+                i = 1;
+                if (check(d)) {
+                    i = d;
+                }
+                if (a - i <= limit) {
                     while (i <= a) {
                         r[i] = gen(i);
                         i += 1;
