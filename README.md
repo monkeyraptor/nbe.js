@@ -156,7 +156,10 @@ x =     20, result = 2.653297705144421"
   2000000: 2.7182811494026673
 }
 ```
-With `t` flag is set to 1, the function will only look at the upper limit. In this case 2000000 (2 million).
+With `f` flag is set to 1, the function will only look at the **upper limit** (`a` argument). In this case 2000000 (2 million).
+```
+nbe(d, a, f, t)
+```
 
 ### Invalid input
 Result will be empty string `""`
