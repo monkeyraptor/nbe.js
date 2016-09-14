@@ -32,6 +32,17 @@ Arguments:
 ### With iteration, `f` flag is 0.
 
 #### `nbe(1, 20, 0, 0)`
+```
+nbe(d, a, f, t)
+```
+`d` (lower range limit): 1
+
+`a` (upper range limit): 20
+
+`f` (iteration or just last output): 0 (using iteration)
+
+`t` (text/object): 0 (text)
+
 Result:
 ```
 The function to generate the value is: f(x) = 1 + (1/x))ˣ
@@ -58,6 +69,18 @@ x =     19, result = 2.650034326640442
 x =     20, result = 2.653297705144421
 ```
 #### `nbe(10, 20, 0, 0)`
+
+```
+nbe(d, a, f, t)
+```
+`d` (lower range limit): 10
+
+`a` (upper range limit): 20
+
+`f` (iteration or just last output): 0 (using iteration)
+
+`t` (text/object): 0 (text)
+
 Result:
 ```
 The function to generate the value is: f(x) = 1 + (1/x))ˣ
@@ -75,7 +98,18 @@ x =     19, result = 2.650034326640442
 x =     20, result = 2.653297705144421
 ```
 #### `nbe(1, 20000, 0, 0)`
-Result is object, (20000 - 1) is beyond limit (1000), so only the last result:
+```
+nbe(d, a, f, t)
+```
+`d` (lower range limit): 1
+
+`a` (upper range limit): 20000
+
+`f` (iteration or just last output): 0 (using iteration)
+
+`t` (text/object): 0 (text)
+
+Result is object, (20000 - 1) + 1 is beyond limit (1000), so only the last result:
 ```
 The function to generate the value is: f(x) = 1 + (1/x))ˣ
 ---
@@ -84,7 +118,19 @@ x =  20000, result = 2.718213874533063"
 ```
 
 #### `nbe(1, 20, 0, 1)`
-Result is object:
+
+```
+nbe(d, a, f, t)
+```
+`d` (lower range limit): 1
+
+`a` (upper range limit): 20
+
+`f` (iteration or just last output): 0 (using iteration)
+
+`t` (text/object): 1 (object)
+
+Result:
 ```
 {
   1: 2
@@ -110,7 +156,17 @@ Result is object:
 }
 ```
 #### `nbe(10, 20, 0, 1)`
-Result is object:
+```
+nbe(d, a, f, t)
+```
+`d` (lower range limit): 1
+
+`a` (upper range limit): 20
+
+`f` (iteration or just last output): 0 (using iteration)
+
+`t` (text/object): 1 (object)
+Result:
 ```
 {
   10: 2.593742460100002
@@ -127,7 +183,19 @@ Result is object:
 }
 ```
 #### `nbe(1, 20000, 0, 1)`
-Result is object, (20000 - 1) is beyond limit (1000), so only the last result:
+
+```
+nbe(d, a, f, t)
+```
+`d` (lower range limit): 1
+
+`a` (upper range limit): 20000
+
+`f` (iteration or just last output): 0 (using iteration)
+
+`t` (text/object): 1 (object)
+
+Since (20000 - 1) is beyond limit (1000), so only the last result:
 ```
 {
   20000: 2.718213874533063
@@ -138,12 +206,33 @@ Result is object, (20000 - 1) is beyond limit (1000), so only the last result:
 
 #### nbe(1, 20, 1, 0)
 ```
+nbe(d, a, f, t)
+```
+`d` (lower range limit): 1
+
+`a` (upper range limit): 20
+
+`f` (iteration or just last output): 1 (last result)
+
+`t` (text/object): 0 (text)
+
+```
 The function to generate the value is: f(x) = 1 + (1/x))ˣ
 ---
 x =     20, result = 2.653297705144421"
 ```
 
 #### nbe(1, 20, 1, 1)
+```
+nbe(d, a, f, t)
+```
+`d` (lower range limit): 1
+
+`a` (upper range limit): 20
+
+`f` (iteration or just last output): 1 (last result)
+
+`t` (text/object): 1 (object)
 ```
 {
   20: 2.653297705144421
