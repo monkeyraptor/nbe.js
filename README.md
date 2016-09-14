@@ -109,7 +109,7 @@ nbe(d, a, f, t)
 
 `t` (text/object): 0 (text)
 
-Result is object, (20000 - 1) + 1 is beyond limit (1000), so only the last result:
+Result is object, [(20000 - 1) + 1] is beyond limit (1000), so only the last result:
 ```
 The function to generate the value is: f(x) = 1 + (1/x))ˣ
 ---
@@ -195,7 +195,7 @@ nbe(d, a, f, t)
 
 `t` (text/object): 1 (object)
 
-Since (20000 - 1) is beyond limit (1000), so only the last result:
+Since [(20000 - 1) + 1] is beyond limit (1000), so only the last result:
 ```
 {
   20000: 2.718213874533063
@@ -254,3 +254,5 @@ nbe(d, a, f, t)
 Result will be empty string `""`
 
 And so on...
+
+This function can be used on browser console (with browser). Be careful to put the upper limit (`a` argument). Billion is still fine (but slow, perhaps). Trillion and up will ruin your machine.
